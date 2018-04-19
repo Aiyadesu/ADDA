@@ -1,12 +1,13 @@
-package aiyadesu.adda
+package aiyadesu.adda.presentation.home.view
 
+import aiyadesu.adda.R
 import android.app.Activity
 import android.os.Bundle
 
-class MainActivity : Activity() {
+class HomeActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_home)
     }
 }
