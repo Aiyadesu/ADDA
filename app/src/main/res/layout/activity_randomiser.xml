@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/randomiserLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    >
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/requestAPIKeyTextView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/label_randomiser"
+        android:layout_marginTop="@dimen/application_margin_top"
+        android:layout_marginStart="@dimen/application_margin_start"
+        app:layout_constraintTop_toTopOf="@id/randomiserLayout"
+        app:layout_constraintStart_toStartOf="@id/randomiserLayout"
+        />
+
+    <EditText
+        android:id="@+id/requestAPIKeyEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/application_margin_start"
+        android:layout_marginEnd="@dimen/application_margin_end"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/requestAPIKeyTextView"
+        app:layout_constraintLeft_toLeftOf="@id/randomiserLayout"
+        app:layout_constraintRight_toRightOf="@id/randomiserLayout"
+        />
+
+    <Button
+        android:id="@+id/setKeyStorePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/application_button_margin_top"
+        android:layout_marginStart="@dimen/application_margin_start"
+        android:text="@string/randomiser_label_set_password"
+        app:layout_constraintTop_toBottomOf="@id/requestAPIKeyEditText"
+        app:layout_constraintStart_toStartOf="@id/randomiserLayout"
         />
 
 </android.support.constraint.ConstraintLayout>

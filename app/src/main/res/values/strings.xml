@@ -4,4 +4,7 @@
     <!-- Activity Labels -->
     <string name="label_home">Home</string>
     <string name="label_randomiser">Randomiser</string>
+
+    <!-- Randomiser Screen -->
+    <string name="randomiser_label_set_password">Set Password</string>
 </resources>

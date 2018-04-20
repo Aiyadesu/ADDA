@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application -->
+    <dimen name="application_margin_start">16dp</dimen>
+    <dimen name="application_margin_top">16dp</dimen>
+    <dimen name="application_margin_end">16dp</dimen>
+
+
+    <dimen name="application_edit_text_margin_top">8dp</dimen>
+    <dimen name="application_button_margin_top">8dp</dimen>
+</resources>
