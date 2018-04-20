@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ADDA</string>
+
+    <!-- Activity Labels -->
+    <string name="label_home">Home</string>
+    <string name="label_randomiser">Randomiser</string>
 </resources>
